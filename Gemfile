@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "4.2.5"
 
-gem "acts_as_taggable_on"
+gem "acts-as-taggable-on"
 gem "coffee-rails", "~> 4.1.0"
 gem "jbuilder", "~> 2.0"
 gem "jquery-rails"
@@ -15,6 +15,7 @@ gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
   gem "byebug"
+  gem "pry-byebug"
   gem "rspec-rails"
 end
 
