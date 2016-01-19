@@ -42,9 +42,8 @@ html lang="en"
             h3 Sidebar
             ul.nav.nav-list
               li.nav-header Sidebar
-              li= link_to "Link 1", "/path1"
-              li= link_to "Link 2", "/path2"
-              li= link_to "Link 3", "/path3"
+              - ActsAsTaggableOn::Tag.most_used.each do |tag|
+                li= link_to tag, "/tags/#{tag}"
 
       footer
         p &copy; Company 2016
