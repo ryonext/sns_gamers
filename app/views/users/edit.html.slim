@@ -1,5 +1,12 @@
 h1 Editing user
 
+h2 tags
+
+ul
+  - @tags.each do |t|
+    li =t
+
+
 == render 'form'
 
 = link_to 'Show', @user

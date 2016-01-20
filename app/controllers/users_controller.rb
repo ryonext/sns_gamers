@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    @tags = ActsAsTaggableOn::Tag.most_used
   end
 
   # POST /users
