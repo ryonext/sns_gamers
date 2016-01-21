@@ -1,10 +1,12 @@
 h1 Editing user
 
-h2 tags
+#games
+  h2 tags
 
-ul
-  - @tags.each do |t|
-    li =t
+  ul
+    - @tags.each do |t|
+      li v-on:click="setTag('#{t}')"
+        = t
 
 
 == render 'form'
