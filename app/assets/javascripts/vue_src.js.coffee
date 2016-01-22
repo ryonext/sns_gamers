@@ -1,7 +1,9 @@
 $ ->
   new Vue(
     el: "#games"
+    data:
+      tags: []
     methods:
       setTag: (tag) ->
-        alert(tag)
+        this.tags += ", #{tag}"
  )

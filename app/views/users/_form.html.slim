@@ -14,5 +14,5 @@
     = f.text_field :twitter_id
   .field
     = f.label :tag_list
-    = f.text_field :tag_list, value: @user.tag_list.to_s
+    = f.text_field :tag_list, value: @user.tag_list.to_s, "v-model" => "tags"
   .actions = f.submit
