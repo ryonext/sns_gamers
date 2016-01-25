@@ -2,11 +2,9 @@ h1 Editing #{@user.name}
 
 #games
   h2 tags
-
-  ul
-    - @tags.each do |t|
-      li v-on:click="setTag('#{t}')"
-        = t
+  - @tags.each do |t|
+      span.label.label-info v-on:click="setTag('#{t}')"
+          = t
 
 
   == render 'form'
