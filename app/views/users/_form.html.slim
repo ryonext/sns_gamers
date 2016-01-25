@@ -6,13 +6,13 @@
         - @user.errors.full_messages.each do |message|
           li = message
 
-  .field
+  .form-group
     = f.label :name
-    = f.text_field :name
-  .field
+    = f.text_field :name, class: "form-control"
+  .form-group
     = f.label :twitter_id
-    = f.text_field :twitter_id
-  .field
+    = f.text_field :twitter_id, class: "form-control"
+  .form-group
     = f.label :tag_list
-    = f.text_field :tag_list, value: @user.tag_list.to_s, "v-model" => "tags"
-  .actions = f.submit
+    = f.text_field :tag_list, value: @user.tag_list.to_s, "v-model" => "tags", class: "form-control"
+  = f.submit class: "btn btn-default"
