@@ -20,4 +20,5 @@ table.table
 
 br
 
-= link_to 'New User', new_user_path
+= form_tag "/oauth" do
+  = submit_tag "create"
